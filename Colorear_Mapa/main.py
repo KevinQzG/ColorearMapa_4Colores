@@ -30,8 +30,11 @@ def colorearMapa(paisVecino, m, i, color):
         color[i] = 0
     return False
 
+    
+     
+
 def mapaColoreado(color): #imprime los colores con los que se coloreo el mapa
-    print("\nSe puede colorear el mapa con los siguientes colores: \n")
+    
     for i in range(13):
         if color[i]==1:
             color[i]=colores[0]
@@ -44,7 +47,7 @@ def mapaColoreado(color): #imprime los colores con los que se coloreo el mapa
         elif color[i]==0 :  
             color[i]="white"
      
-        print(color[i],end = " " + "\n")
+               
     plot_choropleth(color)  #Funcion predefinida para graficar el mapa, no es parte del algoritmo
 
   
@@ -59,7 +62,7 @@ def plot_choropleth(colormap): #Funcion predefinida para graficar el mapa, no es
 if __name__ == "__main__":
 
     paisVecino = [ # matriz de adyacencia de cada pais con sus vecinos
-                   # 1 si son vecinos, 0 si no lo son
+                    # 1 si son vecinos, 0 si no lo son
 
         [ 0, 1, 1, 1 ,0 ,0 ,0 ,0 ,1 ,0 ,0 ,1 ,0], # Argentina
         [ 1, 0, 1, 1 ,0 ,0 ,0 ,0 ,1 ,1 ,0 ,0 ,0], # Bolivia
@@ -78,6 +81,12 @@ if __name__ == "__main__":
     c = 4 # numero de colores disponibles para colorear el mapa
    
     color = [0 for i in range(13)]
+    print("\n" + "\033[;31m" + " Hello,  it is a program for coloring maps :)" + "\033[0m" + "\n") 
+    print("\033[;31m" + "*-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--*" + "\033[0m") 
+    print("\033[;31m" + "* Wait for a few seconds...  Your map is being colorized with only four colors... *" + "\033[0m") 
+    print("\033[;31m" + "*-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--*" + "\033[0m" + "\n") 
+    print("\033[36mThe process is finished. Enjoy your map! \033[0m") 
+    print("\033[36mThanks for using this program! \033[0m" + "\n")      
   
     if (not colorearMapa(paisVecino, c, 0, color)): 
         print ("No se puede colorear el mapa con los colores dados" + "\n")
