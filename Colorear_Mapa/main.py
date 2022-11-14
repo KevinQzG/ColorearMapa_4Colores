@@ -81,12 +81,12 @@ if __name__ == "__main__":
     c = 4 # numero de colores disponibles para colorear el mapa
    
     color = [0 for i in range(13)]
-    print("\n" + "\033[;31m" + " Hello,  it is a program for coloring maps :)" + "\033[0m" + "\n") 
-    print("\033[;31m" + "*-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--*" + "\033[0m") 
-    print("\033[;31m" + "* Wait for a few seconds...  Your map is being colorized with only four colors... *" + "\033[0m") 
-    print("\033[;31m" + "*-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--*" + "\033[0m" + "\n") 
-    print("\033[36mThe process is finished. Enjoy your map! \033[0m") 
-    print("\033[36mThanks for using this program! \033[0m" + "\n")      
+    print("\n" + "\033[;31m" + " Hola, este es un programa para colorear mapas" + "\033[0m" + "\n") 
+    print("\033[;31m" + "*-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--~*" + "\033[0m") 
+    print("\033[;31m" + "* Por favor espera unos segundos, tu mapa está siendo coloreado con solo 4 colores *" + "\033[0m") 
+    print("\033[;31m" + "*-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--~*" + "\033[0m" + "\n") 
+    print("\033[36mEl proceso ha terminado, disfruta tu mapa coloreado\033[0m") 
+    print("\033[36mGracias por usar el programa :'D \033[0m" + "\n")      
   
     if (not colorearMapa(paisVecino, c, 0, color)): 
         print ("No se puede colorear el mapa con los colores dados" + "\n")
