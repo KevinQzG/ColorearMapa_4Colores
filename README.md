@@ -8,6 +8,9 @@ Practice #3 of the data structure and algorithms 1 subject, which consists of co
 4. The previous verification is carried out through an adjacency matrix, in which 1 is used if one country has a border with another or 0 is used if the country does not have a border with the other, in this case a 13x13 matrix is used to List the countries belonging to South America.
 5. Print the colored map with only 4 colors.
 
+## Implementation
+**python3 main.py**
+
 
 ## Practice Members
 **- <a href="https://github.com/KevinQzG">Kevin Quiroz Gonzalez</a>**
