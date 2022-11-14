@@ -59,7 +59,7 @@ def plot_choropleth(colormap): #Funcion predefinida para graficar el mapa, no es
 if __name__ == "__main__":
 
     paisVecino = [ # matriz de adyacencia de cada pais con sus vecinos
-                    # 1 si son vecinos, 0 si no lo son
+                   # 1 si son vecinos, 0 si no lo son
 
         [ 0, 1, 1, 1 ,0 ,0 ,0 ,0 ,1 ,0 ,0 ,1 ,0], # Argentina
         [ 1, 0, 1, 1 ,0 ,0 ,0 ,0 ,1 ,1 ,0 ,0 ,0], # Bolivia
